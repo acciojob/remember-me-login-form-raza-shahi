@@ -12,7 +12,7 @@ if (localStorage.getItem("username") && localStorage.getItem("password")) {
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (checkBox.checked) {
-    localStorage.setItem("userName", user.value);
+    localStorage.setItem("username", user.value);
     localStorage.setItem("password", pass.value);
     alert(`Logged in as ${user.value}`);
   } else {
@@ -23,5 +23,5 @@ submitBtn.addEventListener("click", (e) => {
 
 existingBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  alert(`Logged in as ${localStorage.getItem("userName")}`);
+  alert(`Logged in as ${localStorage.getItem("username")}`);
 });
