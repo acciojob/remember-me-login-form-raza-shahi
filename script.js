@@ -5,7 +5,7 @@ const checkBox = document.getElementById("checkbox");
 const submitBtn = document.getElementById("submit");
 const existingBtn = document.getElementById("existing");
 
-if (localStorage.length > 0) {
+if (localStorage.getItem("username") && localStorage.getItem("password")) {
   existingBtn.style.display = "block";
 }
 
